@@ -1,5 +1,5 @@
 # gerrit-ssh-stream [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+> Gerrit events as a stream
 
 ## Installation
 
@@ -10,9 +10,14 @@ $ npm install --save gerrit-ssh-stream
 ## Usage
 
 ```js
-var gerritSshStream = require('gerrit-ssh-stream');
+var gerritSSH = require('gerrit-ssh-stream');
 
-gerritSshStream('Rainbow');
+gerritSSH({
+  host: 'gerrit.host.com',
+  port: 4443,
+  username: 'simon',
+  privateKey: '/path/to/.ssh/id_rsa'
+}).connect().pipe(process.stdout);
 ```
 ## License
 
