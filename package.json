@@ -1,0 +1,31 @@
+{
+  "name": "gerrit-ssh-stream",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "Simon Thörnqvist",
+    "email": "simon.thornqvist@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "gerrit",
+    "stream",
+    "ssh"
+  ],
+  "repository": "git@github.com:drowzy/gerrit-ssh-stream.git",
+  "devDependencies": {
+    "eslint": "^1.10.3"
+  },
+  "scripts": {
+    "lint": "eslint lib/; exit 0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ssh2": "^0.4.13"
+  }
+}
